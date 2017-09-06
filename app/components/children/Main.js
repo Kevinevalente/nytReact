@@ -34,69 +34,55 @@ var Form = React.createClass({
     this.setState({ startDate: "" });
     this.setState({ endDate: "" });
   },
-  },
 
-  },
   // Here we describe this component's render method
   render: function() {
     return (
-       <div className="container">
-        <div className="jumbotron" style="background-color: #20315A; color: white;">
-          <div className="row">
-            <div ClassName="col-sm-12">
-              <div Classname="panel panel-primary"
-                <div Classname="panel-heading"NYT News Search>
-                  <div Classname="panel-body">
+<div>
 
-        <div className="panel-body text-center">
-          <form onSubmit={this.handleSubmit}>
-            <div className="form-group">
-              <h4 className="">
-                <strong>Location</strong>
-              </h4>
+                      <div className="panel-body text-center">
+                        <form onSubmit={this.handleSubmit}>
+                          <div className="form-group">
+                            <h4 className="">
+                              <strong>Location</strong>
+                            </h4>
 
-              {/*
-                Note how each of the form elements has an id that matches the state.
-                This is not necessary but it is convenient.
-                Also note how each has an onChange event associated with our handleChange event.
-              */}
-              <input
-                value={this.state.search}
-                type="text"
-                className="form-control text-center"
-                id="search"
-                onChange={this.handleChange}
-                required
-              />
-              <br />
-                <input
-                value={this.state.startDate}
-                type="text"
-                className="form-control text-center"
-                id="startDate"
-                onChange={this.handleChange}
-                required
-              />
-              <br />
-                <input
-                value={this.state.endDate}
-                type="text"
-                className="form-control text-center"
-                id="endDate"
-                onChange={this.handleChange}
-                required
-              />
-              <br />
-              <button
-                className="btn btn-primary"
-                type="submit"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
+                            <input
+                              value={this.state.search}
+                              type="text"
+                              className="form-control text-center"
+                              id="search"
+                              onChange={this.handleChange}
+                              required
+                            />
+                            <br />
+                              <input
+                              value={this.state.startDate}
+                              type="text"
+                              className="form-control text-center"
+                              id="startDate"
+                              onChange={this.handleChange}
+                              required
+                            />
+                            <br />
+                              <input
+                              value={this.state.endDate}
+                              type="text"
+                              className="form-control text-center"
+                              id="endDate"
+                              onChange={this.handleChange}
+                              required
+                            />
+                            <br />
+                            <button
+                              className="btn btn-primary"
+                              type="submit">
+                              Submit
+                            </button>
+                            </div>
+                          </form>
+                        </div>
+      
     );
   }
 });

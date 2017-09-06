@@ -15,7 +15,7 @@ var Router = router.Router;
 var IndexRoute = router.IndexRoute;
 
 // Reference the high-level components
-var Main = require("../components/Main");
+var Main = require("../components/children/Main");
 
 
 
